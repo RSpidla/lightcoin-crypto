@@ -1,14 +1,3 @@
-let balance = 500.00;
-
-// class Account {
-
-//   constructor(username) {
-//     this.username = username;
-//     this.balance = 0;
-//   }
-
-// }
-
 class Account {
   
   constructor() {
@@ -54,6 +43,7 @@ class Deposit extends Transaction {
     // deposits always allowed thanks to capitalism.
     return true;
   }
+
 }
 
 class Withdrawal extends Transaction {
@@ -73,18 +63,6 @@ class Withdrawal extends Transaction {
 
 // DRIVER CODE BELOW
 // We use the code below to "drive" the application logic above and make sure it's working as expected
-
-// const myAccount = new Account("snow-patrol");
-
-// console.log('Starting Balance:', myAccount.balance);
-
-// t1 = new Deposit(120.00, myAccount);
-// t1.commit();
-
-// t2 = new Withdrawal(50.00, myAccount);
-// t2.commit();
-
-// console.log('Ending Balance:', myAccount.balance);
 
 const myAccount = new Account();
 
